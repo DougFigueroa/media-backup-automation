@@ -10,7 +10,7 @@ def read_config(file_path):
 
 
 def sync_files(source, destionation):
-    return
+    sync(sourcedir=source, targetdir=destionation, action='sync', verbose=True)
 
 
 def handler():
@@ -19,7 +19,7 @@ def handler():
     config = read_config(config_file_path)
     source = config.get('folder_config', 'source_path')
     destination = config.get('folder_config', 'destination_path')
-    sync_files(source, destionation)
+    sync_files(source, destination)
     print('>>>>>  Sync completed :)  <<<<<')
 
 
