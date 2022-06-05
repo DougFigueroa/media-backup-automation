@@ -130,6 +130,6 @@ dmypy.json
 
 
 # config files
-*.cfg
+#*.cfg
 *.yml
 *.yaml
